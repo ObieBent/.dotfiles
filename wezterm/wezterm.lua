@@ -6,7 +6,7 @@ local config = wezterm.config_builder()
 local act = wezterm.action
 
 -- Font Settings
-config.font = wezterm.font("JetBrainsMono Nerd Font Mono")
+config.font = wezterm.font("IosevkaTerm Nerd Font Mono")
 config.font_size = 15
 
 -- Color Schema
