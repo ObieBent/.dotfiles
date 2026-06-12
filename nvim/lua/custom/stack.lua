@@ -9,6 +9,13 @@ M.lsp_servers = {
   "ansiblels",
   "helm_ls",
   "markdownlint",
+  "bashls",
+  "clangd",
+  "vimls",
+  "rust_analyzer",
+  "terraformls",
+  "dockerls",
+  "jsonls",
 }
 
 M.mason_tools = {

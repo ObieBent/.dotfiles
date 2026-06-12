@@ -6,6 +6,11 @@ local M = {
     python = { "isort", "black" },
     yaml = { "yamlfmt" },
     ["yaml.ansible"] = { "yamlfmt" },
+    json = { "prettier" },
+    jsonc = { "prettier" },
+    sh = { "shfmt" },
+    bash = { "shfmt" },
+    rust = { "rustfmt" },
   },
   format_on_save = function(bufnr)
     return {

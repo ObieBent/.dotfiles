@@ -6,11 +6,12 @@ local config = wezterm.config_builder()
 local act = wezterm.action
 
 -- Font Settings
-config.font = wezterm.font("IosevkaTerm Nerd Font Mono")
-config.font_size = 15
+config.font = wezterm.font("Hack Nerd Font")
+config.font_size = 16
+config.line_height = 1.4
 
 -- Color Schema
-config.color_scheme = "Tokyo Night (Gogh)"
+config.color_scheme = "tokyonight"
 
 -- Appearance
 config.cursor_blink_rate = 0
@@ -24,8 +25,8 @@ config.window_padding = {
 	bottom = 0,
 }
 
-config.window_background_opacity = 1
-config.macos_window_background_blur = 40
+config.window_background_opacity = 0.80
+config.macos_window_background_blur = 20
 
 -- Extra key binding for splitting and rotating the screen
 config.keys = {
@@ -50,5 +51,8 @@ config.keys = {
 	{ key = "UpArrow", mods = "ALT", action = act.ActivatePaneDirection("Up") },
 	{ key = "DownArrow", mods = "ALT", action = act.ActivatePaneDirection("Down") },
 }
+
+-- Scrollback
+config.scrollback_lines = 10000
 
 return config
