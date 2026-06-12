@@ -24,9 +24,16 @@ config.window_padding = {
 	top = 0,
 	bottom = 0,
 }
+config.window_background_image = wezterm.home_dir .. "/.config/wezterm/assets/bg-blurred-darker.png"
 
-config.window_background_opacity = 0.80
-config.macos_window_background_blur = 20
+config.window_background_image_hsb = {
+	brightness = 0.5,
+	saturation = 1.0,
+	hue = 1.0,
+}
+
+config.window_background_opacity = 1.0
+config.macos_window_background_blur = 40
 
 -- Extra key binding for splitting and rotating the screen
 config.keys = {
